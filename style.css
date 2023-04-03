@@ -1,0 +1,101 @@
+html {
+  font-size: 1.1em;
+}
+
+body {
+  margin: 1rem;
+  background-color: black;
+  font-weight: bold;
+  color: white;
+  font-family: Inter, sans-serif;
+  font-size: 2.5rem;
+  font-kerning: -0.5;
+}
+
+div.screens {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.screen, div.thingy, div.thongy, div.half, div.part {
+  width: 100%;
+  height: calc(100vh - 2rem);
+  background-color: gray;
+  border-radius: 1.5rem;
+}
+
+div.half:last-child {
+  background-color: rgba(255, 255, 255, 0.125);
+  padding: 1rem;
+}
+
+div.thongy {
+  flex-direction: column;
+}
+
+div.thingy, div.thongy {
+  background-color: transparent;
+  display: flex;
+  gap: 1rem;
+}
+
+nav {
+  flex-basis: 3rem;
+  border-radius: 1.5rem;
+  background-color: rgba(255, 255, 255, 0.125);
+  position: relative;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.5rem;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  display: inline-block;
+  left: 1rem;
+}
+
+nav a:last-child {
+  left: unset;
+  right: 1rem;
+}
+
+div.part {
+  background-image: url(assets/title-image.png);
+  background-size: contain;
+}
+
+div.half:first-child {
+  background-image: url(assets/wonderss.png);
+  background-size: auto 100%;
+  background-position-x: right;
+}
+
+h1 {
+  font-size: 12.5rem;
+  margin: 0;
+  margin-left: 4rem;
+  margin-top: 2rem;
+}
+
+h2 {
+  font-size: 6rem;
+  margin: 0;
+  margin-left: 2rem;
+  margin-top: 1rem;
+}
+
+.screen.discord {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.25) 0%, rgba(88, 101, 242, 0) 100%), linear-gradient(0deg, #5865F2, #5865F2), rgba(255, 255, 255, 0.125);
+  display: block;
+  text-decoration: none;
+  color: white;
+}
+
+* {
+  box-sizing: border-box;
+  letter-spacing: -0.05em;
+}
